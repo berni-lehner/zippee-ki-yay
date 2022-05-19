@@ -18,5 +18,5 @@ setuptools.setup(
     license='Apache 2.0',
     packages=['zippeekiyay'],
     install_requires=[],
-    package_dir={'':'src'}
+    package_dir={'src'}
 )
