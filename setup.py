@@ -16,7 +16,7 @@ setuptools.setup(
         "Bug Tracker": "https://github.com/berni-lehner/zippee-ki-yay/issues"
     },
     license='Apache 2.0',
-    packages=['zippeekiyay'],
     install_requires=[],
-    package_dir={'src'}
+    package_dir={'': 'src'},
+    py_modules = ["zippeekiyay"],
 )
