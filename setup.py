@@ -17,6 +17,6 @@ setuptools.setup(
     },
     license='Apache 2.0',
     packages=['zippee-ki-yay'],
-    install_requires=['io','struct','requests','zipfile','pathlib'],
+    install_requires=[],
     package_dir={'zippee-ki-yay':'src'}
 )
