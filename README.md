@@ -15,10 +15,24 @@ The zippee-ki-yay module provides the Python interfaces to extract the namelist 
 `
 
 # Installation
+    pip install git+https://github.com/berni-lehner/zippee-ki-yay.git
+    
 ## Requirements and Dependencies
 - Ubuntu (tested with 19.10) or Windows 10 Pro (tested with Version 1903 for x64)
-- Python (tested with Python = 3.7 in Anaconda = 4.8.3)
-- io, struct, requests, zipfile, pathlib
+- Python (tested with Python = 3.7 and 3.9 in Anaconda = 4.10.0)
+- Only standard libs/pakcages are required: io, struct, requests, zipfile, pathlib
+
+# Deinstallation
+In case you are using virtual environments, and cannot uninstall with 
+
+    pip uninstall zippeekiyay
+because of 
+
+    WARNING: Skipping zippeekiyay as it is not installed.
+    
+then just use this command in your active environment:    
+
+    python -m pip uninstall zippeekiyay
 
 # Acknowledgements
 for inspiration goes to https://betterprogramming.pub/how-to-know-zip-content-without-downloading-it-87a5b30be20a
