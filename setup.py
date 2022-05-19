@@ -4,7 +4,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name='zippeekiyay',
+    name='zippee-ki-yay',
     version='0.1.1',
     author='Bernhard Lehner',
     author_email='berni.lehner@gmail.com',
