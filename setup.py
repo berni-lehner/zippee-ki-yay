@@ -4,7 +4,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name='zippee-ki-yay',
+    name='zippeekiyay',
     version='0.1.1',
     author='Bernhard Lehner',
     author_email='berni.lehner@gmail.com',
@@ -16,7 +16,7 @@ setuptools.setup(
         "Bug Tracker": "https://github.com/berni-lehner/zippee-ki-yay/issues"
     },
     license='Apache 2.0',
-    packages=['zippee-ki-yay'],
+    packages=['zippeekiyay'],
     install_requires=[],
-    package_dir={'zippee-ki-yay':'src'}
+    package_dir={'':'src'}
 )
