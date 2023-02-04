@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name='zippee-ki-yay',
-    version='0.1.1',
+    version='0.1.2',
     author='Bernhard Lehner',
     author_email='berni.lehner@gmail.com',
     description='Python interfaces to extract the namelist from a zip archive without the need to download it first.',
