@@ -90,7 +90,17 @@ def _get_zip_info(url) -> ZipFile:
 def _check_signature(signature) -> bool:
     assert len(signature) == 2, "signature needs to be two bytes long"
 
-    signature_ok = bytes(signature).decode('utf8') == 'PK'
+    codecs = ["utf-8"]
+
+    signature_ok = False
+    def try_decode(text):
+        for codec in codecs:
+            try:
+                return text.decode(codec)
+            except UnicodeError:
+                continue
+    
+    signature_ok = try_decode(signature) == 'PK'
 
     return signature_ok
 
@@ -135,6 +145,8 @@ def _is_zip64(zip64_eocd_record) -> bool:
 
 
 def namelist(url: Path):
+    print("namelist()")
+    
     nl = _get_zip_info(url).namelist()
 
     return nl
