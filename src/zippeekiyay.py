@@ -145,8 +145,6 @@ def _is_zip64(zip64_eocd_record) -> bool:
 
 
 def namelist(url: Path):
-    print("namelist()")
-    
     nl = _get_zip_info(url).namelist()
 
     return nl
